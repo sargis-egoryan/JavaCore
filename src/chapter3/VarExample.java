@@ -18,7 +18,5 @@ public class VarExample {
 //    String name="Poxos\n\"Poxosyan\"";
 //        System.out.print(name);
 
-
-
     }
 }

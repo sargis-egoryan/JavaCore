@@ -3,7 +3,7 @@ package chapter3;
 public class BoolTest {
     public static void main(String[] args) {
 
-        boolean b;
+//        boolean b;
 //        b = false;
 //        System.out.println("b равно" + b);
 //        b = true;
@@ -11,7 +11,7 @@ public class BoolTest {
 //        if (b) System.out.println();
 //        b = false;
 //        if (b) System.out.println();
-        System.out.println("10>9=" + (10 > 9));
+//        System.out.println("10>9=" + (10 > 9));
     }
 
 }
