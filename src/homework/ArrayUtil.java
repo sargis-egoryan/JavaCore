@@ -18,6 +18,7 @@ public class ArrayUtil {
         }
 
 
+
         int min = array[0];
         for (int j = 0; j < array.length; j++) {
             if (min > array[j]) {
