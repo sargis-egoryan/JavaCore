@@ -16,19 +16,13 @@ public class ArrayUtil {
                 System.out.println(max);
             }
         }
-
-
-
         int min = array[0];
         for (int j = 0; j < array.length; j++) {
             if (min > array[j]) {
                 min = array[j];
                 System.out.println(min);
             }
-
         }
-
-
     }
 }
 
