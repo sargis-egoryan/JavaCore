@@ -9,14 +9,14 @@ public class ArrayUtil {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
-        int max = array[0];
+        int max = array[1];
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) {
                 max = array[i];
                 System.out.println(max);
             }
         }
-        int min = array[0];
+        int min = array[1];
         for (int j = 0; j < array.length; j++) {
             if (min > array[j]) {
                 min = array[j];
