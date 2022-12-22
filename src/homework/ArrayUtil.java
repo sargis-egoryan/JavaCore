@@ -23,6 +23,12 @@ public class ArrayUtil {
                 System.out.println(min);
             }
         }
+        int[] num = {1, 2, 3, 0, 14, 0, 56};
+        for (int i = 0; i < num.length; i++) {
+            int j = 0;
+            if (num[i] > j)
+                System.out.print(num[i]+" ");
+        }
     }
 }
 
