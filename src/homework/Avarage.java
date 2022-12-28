@@ -7,10 +7,8 @@ public class Avarage {
 
         for (int i = 0; i < 5; i++) {
             result = result + nums[i];
-            System.out.println("average value is " + result / 2);
+            System.out.println("average value is " + result / 5);
         }
-
-
     }
 }
 

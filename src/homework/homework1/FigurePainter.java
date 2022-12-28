@@ -13,7 +13,7 @@ public class FigurePainter {
                     if (j < 5 - (1 + i)) {
                         System.out.print(" ");
                     } else {
-                        System.out.print("* ");
+                        System.out.print("*");
                     }
                 }
                 System.out.println();
