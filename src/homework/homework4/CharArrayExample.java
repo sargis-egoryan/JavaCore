@@ -22,11 +22,14 @@ public class CharArrayExample {
         }
         System.out.println();
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
-        for (char x : text)
-            if (x != ' ')
-                System.out.print(x);
+        for (char ch : text) {
+            if (ch != ' ')
+                System.out.print(ch);
+        }
     }
 }
+
+
 
 
 
