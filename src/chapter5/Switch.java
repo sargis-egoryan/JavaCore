@@ -28,7 +28,6 @@ public class Switch {
             default:
                 season = "вымышленним месяцам";
         }
-                System.out.println("Апрель относится к " + season + ".");
-
+        System.out.println("Апрель относится к " + season + ".");
     }
 }
