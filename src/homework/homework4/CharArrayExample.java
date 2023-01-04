@@ -18,12 +18,10 @@ public class CharArrayExample {
         System.out.println();
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
         System.out.println(chars3.length);
-        {
-            if (chars3[7] == 'y' && chars3[6] == 'l')
-                System.out.print("true");
-            else
-                System.out.print("false");
-        }
+        if (chars3[7] == 'y' && chars3[6] == 'l') {
+            System.out.print(true);
+        } else{
+            System.out.print(false);}
         System.out.println();
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
         for (char ch : text) {
@@ -33,6 +31,8 @@ public class CharArrayExample {
         }
     }
 }
+
+
 
 
 
