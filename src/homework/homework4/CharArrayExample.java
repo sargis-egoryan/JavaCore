@@ -17,11 +17,11 @@ public class CharArrayExample {
         System.out.print(chars2[i / 2 - 1] + "" + chars2[i / 2]);
         System.out.println();
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
-        System.out.println(chars3.length);
-        if (chars3[7] == 'y' && chars3[6] == 'l') {
+        if (chars3[i - 1] == 'y' && chars3[i - 2] == 'l') {
             System.out.print(true);
-        } else{
-            System.out.print(false);}
+        } else {
+            System.out.print(false);
+        }
         System.out.println();
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
         for (char ch : text) {
