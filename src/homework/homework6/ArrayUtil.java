@@ -66,5 +66,12 @@ public class ArrayUtil {
         for (int i = 0; i < array.length; i++)
             aver += array[i];
         System.out.print(aver / array.length);
+        System.out.println();
+        }
+
+        void num(int[]array){
+            for (int i = 0; i < array.length; i++) {
+
+            } System.out.print(array.length);
+        }
     }
-}

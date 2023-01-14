@@ -5,13 +5,13 @@ public class ArraySpaceExample {
         char[] spaceArray = {' ', 'c', 'a', 't', ' ', 'b', 'i', ' ', 'b', ' ', ' '};
         int first = 0;
         int lastindex = spaceArray.length - 1;
-        while (first < lastindex && spaceArray[first] == ' '){
+        while (first < lastindex && spaceArray[first] == ' ') {
             first++;
         }
-        while (first < lastindex && spaceArray[lastindex] == ' '){
+        while (first < lastindex && spaceArray[lastindex] == ' ') {
             lastindex--;
         }
-        char[] result = new char[(lastindex - first)+1];
+        char[] result = new char[(lastindex - first) + 1];
         int index = 0;
         for (int i = first; i < lastindex + 1; i++) {
             result[index++] = spaceArray[i];
