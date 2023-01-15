@@ -5,10 +5,10 @@ public class ArraySpaceExample {
         char[] spaceArray = {' ', 'c', 'a', 't', ' ', 'b', 'i', ' ', 'b', ' ', ' '};
         int first = 0;
         int lastindex = spaceArray.length - 1;
-        while (first < lastindex && spaceArray[first] == ' ') {
+        while (first < spaceArray.length && spaceArray[first] == ' ') {
             first++;
         }
-        while (first < lastindex && spaceArray[lastindex] == ' ') {
+        while (first < spaceArray.length && spaceArray[lastindex] == ' ') {
             lastindex--;
         }
         char[] result = new char[(lastindex - first) + 1];

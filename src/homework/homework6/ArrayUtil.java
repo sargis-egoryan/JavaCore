@@ -71,7 +71,6 @@ public class ArrayUtil {
 
         void num(int[]array){
             for (int i = 0; i < array.length; i++) {
-
             } System.out.print(array.length);
         }
     }

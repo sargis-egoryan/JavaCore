@@ -1,9 +1,9 @@
 package chapter6;
 
 public class Box {
-    double widht;
-    double height;
-    double depth;
+    double widht=10;
+    double height=15;
+    double depth=10;
 
     void volume() {
         System.out.print("Объем равен ");
