@@ -2,10 +2,12 @@ package homework.homework7;
 
 public class Calculator {
     double plus(double num, double num2) {
+
         return num + num2;
     }
 
     double minus(double num, double num2) {
+
         return num - num2;
     }
 
