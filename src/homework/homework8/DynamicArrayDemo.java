@@ -6,6 +6,8 @@ public class DynamicArrayDemo {
         dynamicArray.add(1);
         dynamicArray.add(2);
         dynamicArray.add(3);
+        dynamicArray.add(4);
+        dynamicArray.add(5);
         dynamicArray.print();
     }
 }
