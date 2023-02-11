@@ -5,17 +5,11 @@ public class Employee {
     private String name;
     private String surname;
     private String emplyeeID;
-    double salary;
-    double company;
-    double position;
+    private double salary;
+    private double company;
+    private double position;
 
     public Employee() {
-        name = "poxos";
-        surname = "poxosyan";
-        emplyeeID = "poxosi";
-        salary = 1.0;
-        company = 2.0;
-        position = 3.0;
     }
 
     public Employee(String name, String surname, String emplyeeID, double salary, double company, double position) {
@@ -74,6 +68,7 @@ public class Employee {
     public void setPosition(double position) {
         this.position = position;
     }
+
     @Override
     public String toString() {
         return "Employee{" +
