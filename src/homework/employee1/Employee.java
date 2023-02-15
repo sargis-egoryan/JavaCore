@@ -1,4 +1,4 @@
-package homework.employee;
+package homework.employee1;
 
 import java.util.Objects;
 
@@ -6,22 +6,21 @@ public class Employee {
 
     private String name;
     private String surname;
-    private String emplyeeID;
+    private String employeeId;
     private double salary;
-    private double company;
-    private double position;
+    private String company;
+    private String position;
 
-    public Employee(String empoyeeDatum, String datum, String employeeId, double v) {
-
-    }
-
-    public Employee(String name, String surname, String emplyeeID, double salary, double company, double position) {
+    public Employee(String name, String surname, String employeeId, double salary, String company, String position) {
         this.name = name;
         this.surname = surname;
-        this.emplyeeID = emplyeeID;
+        this.employeeId = employeeId;
         this.salary = salary;
         this.company = company;
         this.position = position;
+    }
+
+    public Employee() {
     }
 
     public String getName() {
@@ -40,12 +39,12 @@ public class Employee {
         this.surname = surname;
     }
 
-    public String getEmplyeeID() {
-        return emplyeeID;
+    public String getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmplyeeID(String emplyeeID) {
-        this.emplyeeID = emplyeeID;
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public double getSalary() {
@@ -56,19 +55,19 @@ public class Employee {
         this.salary = salary;
     }
 
-    public double getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(double company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
-    public double getPosition() {
+    public String getPosition() {
         return position;
     }
 
-    public void setPosition(double position) {
+    public void setPosition(String position) {
         this.position = position;
     }
 
@@ -77,12 +76,12 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Double.compare(employee.salary, salary) == 0 && Double.compare(employee.company, company) == 0 && Double.compare(employee.position, position) == 0 && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname) && Objects.equals(emplyeeID, employee.emplyeeID);
+        return Double.compare(employee.salary, salary) == 0 && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname) && Objects.equals(employeeId, employee.employeeId) && Objects.equals(company, employee.company) && Objects.equals(position, employee.position);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, surname, emplyeeID, salary, company, position);
+        return Objects.hash(name, surname, employeeId, salary, company, position);
     }
 
     @Override
@@ -90,11 +89,12 @@ public class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", emplyeeID=" + emplyeeID +
+                ", employeeId='" + employeeId + '\'' +
                 ", salary=" + salary +
-                ", company=" + company +
-                ", position=" + position +
+                ", company='" + company + '\'' +
+                ", position='" + position + '\'' +
                 '}';
     }
-
 }
+
+

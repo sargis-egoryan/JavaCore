@@ -31,7 +31,7 @@ public class EmployeeStorage {
             }
         }
         if (!found) {
-            System.out.println("employee " + ID + " not found");
+            System.out.println("employee1 " + ID + " not found");
         }
     }
 }
