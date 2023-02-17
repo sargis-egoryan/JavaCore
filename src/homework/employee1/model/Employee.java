@@ -1,4 +1,4 @@
-package homework.employee1;
+package homework.employee1.model;
 
 import java.util.Objects;
 
@@ -10,6 +10,7 @@ public class Employee {
     private double salary;
     private String company;
     private String position;
+    private boolean active=true;
 
     public Employee(String name, String surname, String employeeId, double salary, String company, String position) {
         this.name = name;
@@ -71,17 +72,25 @@ public class Employee {
         this.position = position;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Double.compare(employee.salary, salary) == 0 && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname) && Objects.equals(employeeId, employee.employeeId) && Objects.equals(company, employee.company) && Objects.equals(position, employee.position);
+        return Double.compare(employee.salary, salary) == 0 && active == employee.active && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname) && Objects.equals(employeeId, employee.employeeId) && Objects.equals(company, employee.company) && Objects.equals(position, employee.position);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, surname, employeeId, salary, company, position);
+        return Objects.hash(name, surname, employeeId, salary, company, position, active);
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     @Override
@@ -93,6 +102,7 @@ public class Employee {
                 ", salary=" + salary +
                 ", company='" + company + '\'' +
                 ", position='" + position + '\'' +
+                ", active=" + active +
                 '}';
     }
 }

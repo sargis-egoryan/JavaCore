@@ -1,4 +1,6 @@
-package homework.employee1;
+package homework.employee1.storage;
+
+import homework.employee1.model.Employee;
 
 public class EmployeeStorage {
     private Employee[] employees = new Employee[10];
@@ -23,6 +25,14 @@ public class EmployeeStorage {
         }
     }
 
+    public void printByStatus(boolean active) {
+        for (int j = 0; j < size; j++) {
+            if (employees[j].isActive() == active) {
+                System.out.println(employees[j]);
+            }
+        }
+    }
+
     public Employee getEmployeeById(String id) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getEmployeeId().equals(id)) {
@@ -36,6 +46,15 @@ public class EmployeeStorage {
         for (int i = 0; i < size; i++) {
             Employee employee = employees[i];
             if (employee.getCompany().contains(companyName)) {
+                System.out.println(employee);
+            }
+        }
+    }
+
+    public void searchBySalaryRange(double minSalary, double maxSalary) {
+        for (int i = 0; i < size; i++) {
+            Employee employee = employees[i];
+            if (employee.getSalary() >= minSalary && employee.getSalary() <= maxSalary) {
                 System.out.println(employee);
             }
         }
