@@ -21,4 +21,9 @@ public class FixedStack implements IntStack {
             return 0;
         } else return stck[tos--];
     }
+
+    @Override
+    public int[] getNElements(int n) {
+        return new int[0];
+    }
 }
