@@ -19,7 +19,8 @@ public interface Commands {
 
         System.out.println("Please input" + EXIT + " for exit");
         System.out.println("Please input" + ADD_EMPLOYEE + " add employee");
-        System.out.println("Please input" + ADD_COMPANY + "for add company");
+        System.out.println("Please input" + ADD_COMPANY + "for add company" +
+                "");
         System.out.println("Please input" + PRINT_EMPLOYEES + " print all employee");
         System.out.println("Please input" + SEARCH_EMPLOYEE_BY_ID + " search employee by ID");
         System.out.println("Please input" + SEARCH_EMPLOYEE_BY_COMPANY + " search employee by company");
