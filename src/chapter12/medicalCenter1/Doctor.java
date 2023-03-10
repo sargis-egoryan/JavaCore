@@ -1,10 +1,10 @@
-package medicalCenter;
+package chapter12.medicalCenter1;
 
-import chapter12.medicalCenter1.Profession;
+import medicalCenter.Person;
 
 import java.util.Objects;
 
-public class Doctor extends Person{
+public class Doctor extends Person {
     private String email;
     private String profession;
 
